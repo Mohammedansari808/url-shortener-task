@@ -1,13 +1,13 @@
-import { Logout } from '@mui/icons-material'
-import { Table } from '@mui/material'
 import React from 'react'
-
+import CreateURLS from './CreateURLS'
+import Logout from './Logout'
+import ListUrls from "./ListUrls"
 function ShortURLS() {
-    const username = localStorage.getItem("username")
     return (
         <div>
             <Logout />
-            <Table username={username} />
+            <CreateURLS />
+
         </div>
 
     )

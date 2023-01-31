@@ -14,10 +14,12 @@ function VerifyComplete() {
                 toast.success("verification success redirecting to login page")
                 setTimeout(() => {
                     navigate("/")
-                }, 3000);
+                }, 5000);
 
-            } else {
-                toast.success("verification link expired")
+
+            } else if (result.message == "error") {
+                toast.error("verification link expired")
+                navigate("/")
             }
         })
 

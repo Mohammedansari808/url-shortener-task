@@ -1,1 +1,2 @@
-export const fullLink = "http://localhost:4000"
+export const fullLink = "https://url-shortener-backend-pi.vercel.app"
+// http://localhost:4000

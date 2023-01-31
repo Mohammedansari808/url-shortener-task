@@ -18,7 +18,7 @@ function Logout() {
     return (
 
         <div style={{ backgroundColor: "lightgrey", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <h4 style={{ marginLeft: "10px", }} >ShortURLS</h4>
+            <h3 style={{ marginLeft: "10px", }} >URL Shortener</h3>
             <Button style={{ margin: "10px", }} onClick={() => logout()} color="success" variant="contained">{load ? <i className="fa fa-circle-o-notch fa-spin"></i> : null}logout</Button>
         </div>
 

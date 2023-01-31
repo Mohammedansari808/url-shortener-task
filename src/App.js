@@ -10,7 +10,7 @@ import Forget from './Components/Forget';
 import VerifyComplete from './Components/VerifyComplete';
 import ShortURLS from './Components/ShortURLS';
 import PasswordChange from './Components/PasswordChange';
-
+import ListUrls from './Components/ListUrls';
 function App() {
 
   return (
@@ -23,8 +23,7 @@ function App() {
         <Route path="/verification-link/:username/:id" element={<Verification />} />
         <Route path="/password-change/:username" element={<Protectedroute><PasswordChange /></Protectedroute>} />
         <Route path="/forgetpassword" element={<Forget />} />
-        <Route path="/urlshorteners/:id" element={<ShortURLS />} />
-
+        <Route path="/urlshorteners/:id" element={<Protectedroute><ShortURLS /></Protectedroute>} />
       </Routes>
 
 

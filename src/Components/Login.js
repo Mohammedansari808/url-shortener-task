@@ -34,7 +34,7 @@ function Login() {
                 localStorage.setItem('role_id', result.role_id)
                 localStorage.setItem("username", loginInfo.username)
                 localStorage.setItem("email", result.email)
-                navigate("/theaters")
+                navigate(`/urlshorteners/${loginInfo.username}`)
             } else {
                 navigate("/")
             }

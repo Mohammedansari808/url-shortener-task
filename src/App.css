@@ -3,6 +3,12 @@
 body {
   font-family: 'Varela Round', sans-serif;
 }
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+
 
 button {
   background: #5469d4;
